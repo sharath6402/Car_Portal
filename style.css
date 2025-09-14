@@ -1,0 +1,356 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+    color: #354A54;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+
+nav {
+    width: 95%;
+    height: 60px;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    height: 70px;
+}
+
+.ulForNav {
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.ulForNav li {
+    margin-right: 20px;
+}
+
+.active {
+    color: #00B2FF;
+    font-size: 20px;
+    font-weight: 900px;
+}
+
+.heroSection {
+    width: 100vw;
+    height: auto;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.heroSection img {
+    width: 50vw;
+}
+
+.heroSectionText {
+    width: 30vw;
+}
+
+.title {
+    color: #354A54;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.subTitle {
+    color: #858484;
+    margin-bottom: 30px;
+}
+
+.actionBtn {
+    padding: 10px 20px;
+    font-weight: 900;
+    color: white;
+    background-color: #00B2FF;
+    margin-bottom: 30px;
+}
+
+.brandSection {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.brandTitle,
+.aboutTitle {
+    margin: 20px 0 10px 20px;
+    color: #00B2FF;
+}
+
+.brands {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 3px solid #354A54;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.cardFrame {
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 210px;
+    border-radius: 20px;
+    border: 3px solid #00B2FF;
+    margin: 20px;
+    padding: 10px 5px;
+}
+
+.card img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #858484;
+}
+.card-btn{
+	padding: 10px 20px;
+    font-weight: 900;
+    color: white;
+    background-color: #00B2FF;
+    border-radius:10px;
+    /*margin-bottom: 30px;*/
+    float:right;
+    display:block;
+	
+}
+.aboutCard {
+    width: 200px;
+    height: 125px;
+    border: 1px solid #354A54;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.aboutSection {
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.aboutCard h3 {
+    margin: 10px 0;
+}
+
+footer {
+    height: auto;
+    background-color: #354A54;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+footer ul li {
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.row {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.row input,
+.button {
+    border-radius: 20px;
+}
+
+.row input {
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.button {
+    width: 200px;
+}
+
+.carDetailsSection {
+    width: 100vw;
+    margin: 20px;
+}
+
+.detailsRow {
+    padding-right: 20px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.featureRow {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.actionBtn2 {
+    background-color: #515df8;
+    color: white;
+    font-weight: 900;
+    padding: 10px;
+    border:0;
+    font-size:20px;
+    cursor:pointer;
+    float:left;
+    
+    border-radius:10px;
+}
+
+.details {
+    padding: 10px;
+    width: 100%;
+}
+
+.mainCar {
+    width: 400px;
+}
+
+.featureCard {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #354A54;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.featureCard img {
+    height: 30px;
+}
+
+.featureCard li {
+    margin-bottom: 5px;
+}
+
+.title2 {
+    color: #00B2FF;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+@media screen and (max-width : 800px) {
+    nav {
+        width: 100vw;
+    }
+
+    nav img {
+        width: auto;
+        height: 50px;
+    }
+
+    .ulForNav {
+        width: auto;
+    }
+
+    .ulForNav li {
+        font-size: 16px;
+    }
+
+    .heroSection {
+        width: 90vw;
+        margin: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .heroSection img {
+        width: 100%;
+    }
+
+    .heroSectionText {
+        width: 100%;
+    }
+
+    .carDetailsSection {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    nav img {
+        height: 40px;
+        width: auto;
+    }
+
+    nav {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .ulForNav {
+        width: 95vw;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ulForNav li {
+        margin-right: 5px;
+    }
+
+    .detailsRow {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .featureCard,
+    .mainCar {
+        width: 90vw;
+    }
+    .details{
+        padding: 0;
+    }
+
+    .carDetailsSection {
+        margin-left: 5px;
+    }
+}
+.congrats{
+	visibility:hidden;
+}
+.open-congrats{
+	visibility:visible;
+}
+.congrats img{
+	height: 70px;
+	width: 10vw;
+}
+.congrats h2{
+	 width: 95vw;
+    margin: 20px;
+}

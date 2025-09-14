@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-white{
+	background-color: #fff;
+}
+
+
+.mt-50{
+	margin-top: 50px;
+}
+#canvas{
+    border: 2px solid black;
+}
+nav {
+    width: 95%;
+    height: 60px;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img {
+    height: 70px;
+}
+
+.congrats{
+	visibility:hidden;
+}
+.open-congrats{
+	visibility:visible;
+}
+.congrats img{
+	height: 70px;
+	width: 10vw;
+}
+.open-congrats img{
+	height: 70px;
+	width: 10vw;
+}
+.congrats h2{
+	 width: 95vw;
+    margin: 20px;
+}
+.actionBtn2 {
+    background-color: #515df8;
+    color: white;
+    font-weight: 900;
+    padding: 10px;
+    border:0;
+    font-size:20px;
+    cursor:pointer;
+    float:left;
+    
+    border-radius:10px;
+}

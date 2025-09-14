@@ -1,0 +1,155 @@
+<html lang="en">
+<head xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <title>Car Portal</title>
+    <link rel="website icon" type="png" href="./Logo1.png">
+    <link rel="stylesheet" href="./stylr.css">
+   <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+<body class="bg-white">
+<nav>
+        <img src="./logo.ico" alt="logo" />
+        </nav>
+        
+    <br>
+<div class="container">
+    <div class="row">
+        <div class="card mt-50" style="width: 100%; height: 100%">
+            <div class="card-header" style="text-align: center">
+                <h1>Sell Your Car</h1>
+            </div>
+            <div class="card-body">
+                <div class="col-12" style="text-align: center">
+                    <h5> Try filling your car details below: </h5>
+                </div>
+                <br>
+                <form method="post" action='sellcar.jsp' accept-charset="utf-8" name="Modelform">
+                  
+                                       
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the car name:</b> </label><br>
+                        <input type="text" class="form-control" id="car_name" name="car_name1"
+                               placeholder="Enter the car name: ">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the Number of Kilometres that the car has travelled:</b> </label><br>
+                        <input type="text" class="form-control" id="kilo_driven" name="kilo_driven1"
+                               placeholder="Enter the kilometres driven ">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the Ownership of the car:</b> </label><br>
+                        <input type="text" class="form-control" id="owners" name="owners1"
+                               placeholder="Enter the number of owner ">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the transmission of the car :</b> </label><br>
+                        <input type="text" class="form-control" id="transmission" name="transmission1"
+                               placeholder="Enter the transmission mode">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the feul type of the car has travelled:</b> </label><br>
+                        <input type="text" class="form-control" id="fuel_type" name="fuel_type1"
+                               placeholder="Enter the fuel type of the car ">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the mileage given by the car:</b> </label><br>
+                        <input type="text" class="form-control" id="mileage" name="mileage1"
+                               placeholder="Enter the mileage given ">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the car's engine :</b> </label><br>
+                        <input type="text" class="form-control" id="engine" name="engine1"
+                               placeholder="Enter the engine spec ">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter the number of seat :</b> </label><br>
+                        <input type="text" class="form-control" id="seat" name="seat1"
+                               placeholder="Enter the seat numbers ">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>Enter your car's age:</b> </label><br>
+                        <input type="text" class="form-control" id="age" name="age1"
+                               placeholder="Enter car's age ">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>quote your car price:</b> </label><br>
+                        <input type="text" class="form-control" id="price" name="price1"
+                               placeholder="Enter the price for your car ">
+                    </div>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <label><b>place your car image in jpeg format:</b> </label><br>
+                        <input type="file" class="form-control" id="pic" name="pic1"
+                              accept="Image/*" >
+                    </div>
+                    <input type='hidden' id='h2' name='h2'/>
+                    <div class="col-md-10 form-group" style="text-align: center">
+                        <button type="submit"  class="btn btn-primary form-control" onclick="send_data()">Sell car</button>
+                    </div>
+                </form>
+                <br>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class = "congrats" id ="congrats">
+  <img src="./yesicon.png" alt="congrats"/>
+  <h2>Thanks For Using Car Portal To Sell Your Car   </h2>
+  
+  
+  </div> 
+   
+   <script type="text/javascript">
+  
+   let popup= document.getElementById("congrats");
+      function send_data()
+   {
+       document.querySelector('form').addEventListener("submit",form_handler);
+		const km_driven=document.getElementById('kilo_driven');
+		var km=km_driven.value;
+		console.log(km);
+		const car_name=document.getElementById('car_name');
+		var name=car_name.value;
+		console.log(name);
+		const mile=document.getElementById('mileage');
+		var mi=mile.value;
+		console.log(mi);
+		const own=document.getElementById('owners');
+		var ownr=own.value;
+		console.log(ownr);
+		const trans=document.getElementById('transmission');
+		var trs=trans.value;
+		console.log(trs);
+		const fuel=document.getElementById('fuel_type');
+		var fue=fuel.value;
+		console.log(fue);
+		const sea=document.getElementById('seat');
+		var se=sea.value;
+		console.log(se);
+		const engin=document.getElementById('engine');
+		var engi=engin.value;
+		console.log(engi);
+		const ag=document.getElementById('age');
+		var a=ag.value;
+		console.log(a);
+		const pric=document.getElementById('price');
+		var pri=pric.value;
+		console.log(pri);
+		const pi=document.getElementById('pic');
+		var p=pi.value;
+		 document.getElementById('h2').value=p;
+		console.log(p);
+		
+	   popup.classList.add("open-congrats");
+	   
+   }
+   </script>
+   
+</body>
+</html>
